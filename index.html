@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/OWA.png">
-    <title>Homepage</title>
-  </head>
-  <body>
-    <nav>
-        <ul id="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bourbon.html">Bourbon</a></li>
-            <li><a href="rye.html">Rye</a></li>
-            <li><a href="scotch.html">Scotch</a></li>
-          </ul>
-    </nav>
-        <div>
-            <h1>Whisk(e)y</h1>
-            <p style="text-decoration: underline;">Click a type of whisky to learn more!</p>
-        </div>
-        
-        <div class="row">
-            <div class="column">
-            <a href="bourbon.html"><p>Bourbon</p>
-              <img src="images/Blantons.png" alt="Snow" style="width:100%" height="500px">
-              <p id="imageNavP">American whisky, distilled from at least 51% corn </p></a>
-            </div>
-            <div class="column">
-              <a href="rye.html"><p>Rye</p>
-              <img src="images/rye.jpg" alt="Forest" style="width:100%" height="500px"> 
-              <p id="imageNavP">Distilled from at least 51% Rye</p></a>
-            </div>
-            <div class="column">
-              <a href="scotch.html"><p>Scotch</p>
-              <img src="images/johnny.jpg" alt="Mountains" style="width:100%" height="500px">
-              <p id="imageNavP">Scottish whisky, typically aged longer and made in Scotland</p></a> 
-            </div>
-          </div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/OWA.png">
+  <title>Homepage</title>
+</head>
+
+<body style="background-color:rgb(242, 211, 153)">
+  <nav>
+    <ul id="nav">
+      <li><a href="index.html">Whisk(e)y</a>
+        <ul>
+          <li><a href="bourbon.html">Bourbon</a></li>
+          <li><a href="rye.html">Rye</a></li>
+          <li><a href="scotch.html">Scotch</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <h1>Whisk(e)y</h1>
+    <p style="text-decoration: underline;">Click a type of whisky to learn more!</p>
+  </div>
+
+  <div class="row  fade-in" >
+    <div class="column">
+      <a href="bourbon.html">
+        <p>Bourbon</p>
+        <img src="images/Blantons.png" alt="Snow" style="width:100%" height="500px">
+        <p id="imageNavP">American whisky, distilled from at least 51% corn </p>
+      </a>
+    </div>
+    <div class="column">
+      <a href="rye.html">
+        <p>Rye</p>
+        <img src="images/rye.jpg" alt="Forest" style="width:100%" height="500px">
+        <p id="imageNavP">Distilled from at least 51% Rye</p>
+      </a>
+    </div>
+    <div class="column">
+      <a href="scotch.html">
+        <p>Scotch</p>
+        <img src="images/johnny.jpg" alt="Mountains" style="width:100%" height="500px">
+        <p id="imageNavP">Scottish whisky, typically aged longer and made in Scotland</p>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div class="form-style-2">
+    <div class="form-style-2-heading">Questions? Contact us!</div>
+    <form action="" method="post">
+      <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field"
+          name="field1" value="" /></label>
+      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field"
+          name="field2" value="" /></label>
+      <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value=""
+          maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4" />-<input
+          type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" /></label>
+      <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
+          <option value="General Question">General</option>
+          <option value="Advertise">Advertisement</option>
+          <option value="Partnership">Partnership</option>
+        </select></label>
+      <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5"
+          class="textarea-field"></textarea></label>
+
+      <label><span> </span><input type="submit" value="Submit" /></label>
+    </form>
+  </div>
+</body>
+
 </html>
