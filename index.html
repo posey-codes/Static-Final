@@ -3,73 +3,86 @@
 
 <head>
   <meta charset="utf-8" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="images/OWA.png">
   <title>Homepage</title>
 </head>
 
-<body style="background-color:rgb(242, 211, 153)">
-  <nav>
-    <ul id="nav">
-      <li><a href="index.html">Whisk(e)y</a>
-        <ul>
-          <li><a href="bourbon.html">Bourbon</a></li>
-          <li><a href="rye.html">Rye</a></li>
-          <li><a href="scotch.html">Scotch</a></li>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Whisk(e)y</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="bourbon.html">Bourbon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rye.html">Rye</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scotch.html">Scotch</a>
+          </li>
         </ul>
-      </li>
-    </ul>
+      </div>
+    </div>
   </nav>
-  <div>
-    <h1>Whisk(e)y</h1>
-    <p style="text-decoration: underline;">Click a type of whisky to learn more!</p>
-  </div>
+    <div class="container">
+      <div class="row text-center">
+        <h1>Whisk(e)y</h1>
+        <p style="text-decoration: underline;">Click a type of whisky to learn more!</p>
+      </div>
 
-  <div class="row  fade-in" >
-    <div class="column">
-      <a href="bourbon.html">
-        <p>Bourbon</p>
-        <img src="images/Blantons.png" alt="Snow" style="width:100%" height="500px">
-        <p id="imageNavP">American whisky, distilled from at least 51% corn </p>
-      </a>
-    </div>
-    <div class="column">
-      <a href="rye.html">
-        <p>Rye</p>
-        <img src="images/rye.jpg" alt="Forest" style="width:100%" height="500px">
-        <p id="imageNavP">Distilled from at least 51% Rye</p>
-      </a>
-    </div>
-    <div class="column">
-      <a href="scotch.html">
-        <p>Scotch</p>
-        <img src="images/johnny.jpg" alt="Mountains" style="width:100%" height="500px">
-        <p id="imageNavP">Scottish whisky, typically aged longer and made in Scotland</p>
-      </a>
-    </div>
-  </div>
-  <br>
-  <div class="form-style-2">
-    <div class="form-style-2-heading">Questions? Contact us!</div>
-    <form action="" method="post">
-      <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field"
-          name="field1" value="" /></label>
-      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field"
-          name="field2" value="" /></label>
-      <label><span>Telephone</span><input type="text" class="tel-number-field" name="tel_no_1" value=""
-          maxlength="4" />-<input type="text" class="tel-number-field" name="tel_no_2" value="" maxlength="4" />-<input
-          type="text" class="tel-number-field" name="tel_no_3" value="" maxlength="10" /></label>
-      <label for="field4"><span>Regarding</span><select name="field4" class="select-field">
-          <option value="General Question">General</option>
-          <option value="Advertise">Advertisement</option>
-          <option value="Partnership">Partnership</option>
-        </select></label>
-      <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5"
-          class="textarea-field"></textarea></label>
+      <div class="row col-12">
+        <div class="card-group fade-in text-center">
 
-      <label><span> </span><input type="submit" value="Submit" /></label>
-    </form>
-  </div>
+          <div class="card border-0" style="max-width: 33%;">
+            <a href="bourbon.html" style="text-decoration: none;">
+              <div class="card-header bg-transparent">Bourbon</div>
+              <div class="card-body text-success">
+                <img src="images/Blantons.png" alt="Bourbon" style="width:100%" height="500px">
+              </div>
+              <div class="card-footer bg-transparent">American whiskey, distilled from at least 51% corn</div>
+            </a>
+          </div>
+
+          <div class="card border-0" style="max-width: 33%;">
+            <a href="rye.html" style="text-decoration: none;">
+              <div class="card-header bg-transparent">Rye</div>
+              <div class="card-body text-success">
+                <img src="images/rye.jpg" alt="Bourbon" style="width:100%" height="500px">
+              </div>
+              <div class="card-footer bg-transparent">Distilled from at least 51% Rye</div>
+            </a>
+          </div>
+
+          <div class="card border-0" style="max-width: 33%;">
+            <a href="scotch.html" style="text-decoration: none;">
+              <div class="card-header bg-transparent ">Scotch</div>
+              <div class="card-body text-success">
+                <img src="images/johnny.jpg" alt="Snow" style="width:100%" height="500px">
+              </div>
+              <div class="card-footer bg-transparent border-success">Scottish whisky, typically aged longer and made in
+                Scotland</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br>
 </body>
 
 </html>

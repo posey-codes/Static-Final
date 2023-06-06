@@ -2,25 +2,58 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/OWA.png">
     <title>Homepage</title>
   </head>
-  <body  style="background-color:rgb(242, 211, 153)">
-    <nav>
-      <ul id="nav">
-        <li><a href="index.html">Whisk(e)y</a>
-          <ul>
-            <li><a href="bourbon.html">Bourbon</a></li>
-            <li><a href="rye.html">Rye</a></li>
-            <li><a href="scotch.html">Scotch</a></li>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Whisk(e)y</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="bourbon.html">Bourbon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rye.html">Rye</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="scotch.html">Scotch</a>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
-    <h1>Scotch</h1>
-    <!-- <iframe src="images/scotch_video.mp4" height="200" width="300" title="Scotch Pour" > -->
-      <div class="container">
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 text-center">
+          <h1>Scotch</h1>
+        </div>
+      </div>
+      <div class="row">
+        <p></p>
+      </div>
+      <div class="row col-6 offset-3">
+        <p style="font-size: 18px;">There are many types of scotches that are produced.  One of the more popular scotches is 
+            Johnnie Walker. It originated in Scotland in the 1820s, John Walker himself being born on 1805.  He quickly
+            built up a popular brand of whiskey, his sons taking over for him after his death.  Below is a table of their 
+            whiskey's and their prices.
+        </p>
+      </div>
+      <div class="row col-10 offset-1">
         <table class="styled-table">
           <thead>
             <tr>
@@ -71,8 +104,15 @@
               <td>$243</td>
             </tr>
           </tbody>
-          
         </table>
       </div>
-
-    </iframe>
+      <div class="row">
+        <p></p>
+      </div>
+      <div class="row col-6 offset-3 text-center">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="images/scotch_video.mp4"></iframe>
+        </div>
+      </div>
+    </div>
+</body>
