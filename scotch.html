@@ -12,6 +12,7 @@
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/OWA.png">
+
     <title>Homepage</title>
   </head>
   <body>
@@ -36,25 +37,44 @@
         </div>
       </div>
     </nav>
-
-    <div class="container">
+    <br>
+    <div class="container ">
       <div class="row ">
-        <div class="col-12 text-center">
+        <div class="col-lg-4 offset-lg-4 text-center bg-white shadow-sm p-3 mb-5 bg-body rounded">
           <h1>Scotch</h1>
         </div>
       </div>
       <div class="row">
         <p></p>
       </div>
-      <div class="row col-6 offset-3">
+      <div class="row col-6 offset-3 text-center bg-white shadow-sm p-3 mb-5 bg-body rounded">
         <p style="font-size: 18px;">There are many types of scotches that are produced.  One of the more popular scotches is 
             Johnnie Walker. It originated in Scotland in the 1820s, John Walker himself being born on 1805.  He quickly
             built up a popular brand of whiskey, his sons taking over for him after his death.  Below is a table of their 
             whiskey's and their prices.
         </p>
       </div>
+      <div class="container">
+        <div class="form-inline" id="SubmissionForm">
+          <div class="form-group row col-lg-10 offset-lg-1  bg-white shadow-sm p-3 mb-5 bg-body rounded">
+            <div class="col-3">
+              <input class="form-control" type="text" placeholder="Name" id="scotchNameInput">
+            </div>
+            <div class="col-3">
+              <input class="form-control" type="text" placeholder="Size" id="scotchSizeInput">
+            </div>
+            <div class="col-3">
+              <input class="form-control" type="text" placeholder="Cost" id="scotchCostInput"> 
+            </div>
+            <div class="col-1">
+              <button type="submit" class="btn btn-primary" id='submitButton'>Submit</button>
+            </div> 
+          </div>
+         
+        </div>
+      </div>
       <div class="row col-10 offset-1">
-        <table class="styled-table">
+        <table class="styled-table" id="scotchTable">
           <thead>
             <tr>
               <th>Name</th>
@@ -62,7 +82,7 @@
               <th>Cost</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id='scotchTB'>
             <tr>
               <td>Johnnie Walker Red Label </td>
               <td>750ml</td>
@@ -109,10 +129,9 @@
       <div class="row">
         <p></p>
       </div>
-      <div class="row col-6 offset-3 text-center">
-        <div class="embed-responsive embed-responsive-4by3">
-          <iframe class="embed-responsive-item" src="images/scotch_video.mp4"></iframe>
-        </div>
-      </div>
     </div>
+
+
 </body>
+
+<script src="script.js"></script>
